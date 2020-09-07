@@ -1,0 +1,26 @@
+<%- include("partials/heading") -%>
+
+<div class="title">
+  <h1>Contact me</h1>
+  <h3> <%- contactInstruction %> </h3>
+  </div>
+
+  <form action="/contact" class="emailForm" name="emailForm" method="post" >
+    <label for="name">Your Name:</label>
+    <br>
+    <input type="text" id="name" size="40" name="theirName">
+    <br>
+    <label for="email">Your Email:</label>
+    <br>
+    <input type="email" id="email" size="40" name="theirEmail">
+    <br>
+    <label for="yourMessage" >Please write your message here:</label>
+    <br>
+    <textarea rows="8" cols="80" id="yourMessage" name="theirMessage"></textarea>
+    <br>
+    <input type="submit" value="submit" class="btn btn-outline-secondary">
+    </form>
+
+
+
+<%- include("partials/footer") -%>
